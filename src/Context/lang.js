@@ -3,18 +3,24 @@ import { useTranslation } from "react-i18next";
 
 const TranslationContext = createContext();
 
-export const TranslationProvider = ({ children }) => {
+export const TranslationProvider = ({ children, defaultLang }) => {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState("ar");
 
+  // نحدد اللغة الابتدائية: أولوية = prop > i18n.current > "en"
+  const initialLang =
+    defaultLang || i18n.resolvedLanguage || i18n.language || "en";
+
+  const [language, setLanguage] = useState(initialLang);
+
+  // كل ما language تتغير غيّر i18n لو مش نفس اللغة
   useEffect(() => {
-    i18n.changeLanguage(language);
+    if (i18n.language !== language) {
+      i18n.changeLanguage(language);
+    }
   }, [language, i18n]);
 
-  // دالة لتبديل اللغة
   const toggleLanguage = () => {
-    const newLang = language === "ar" ? "en" : "ar";
-    setLanguage(newLang);
+    setLanguage(prev => (prev.startsWith("ar") ? "en" : "ar"));
   };
 
   return (

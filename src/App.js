@@ -8,7 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "./Components/header/Header";
 import Home from "./Components/Home/Home";
 import { MediaQuery } from "./Context/mediaQuery";
-import { TranslationProvider } from './Context/lang';
+import { TranslationProvider } from "./Context/lang";
 import Work from "./Components/work/Work";
 import About from "./Components/about/About";
 import ContactUs from "./Components/contact us/ContactUs";
@@ -21,7 +21,7 @@ function App() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    i18n.changeLanguage("ar");
+    i18n.changeLanguage("en");
   }, []);
 
   const mediaValues = {
