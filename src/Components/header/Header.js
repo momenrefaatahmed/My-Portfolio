@@ -1,13 +1,17 @@
 import * as React from "react";
+import { useAppTranslation } from "../../Context/lang";
+
 /* Material Ui */
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { Button } from "@mui/material";
 // import Button from '@mui/material/Button';
 
 export default function Header({ isToggled, setIsToggled }) {
   const isSmallScreen = useMediaQuery("(min-width:600px)");
   const headerRef = React.useRef(null);
+  const { t, language, toggleLanguage } = useAppTranslation();
 
   const handleToggle = (event) => {
     setIsToggled(event.target.checked);
@@ -18,7 +22,11 @@ export default function Header({ isToggled, setIsToggled }) {
   };
 
   return (
-    <div id="header" ref={headerRef} style={{ color: "White", padding: "24px 60px" }}>
+    <div
+      id="header"
+      ref={headerRef}
+      style={{ color: "White", padding: "24px 60px" }}
+    >
       <div
         style={{
           display: "flex",
@@ -27,7 +35,7 @@ export default function Header({ isToggled, setIsToggled }) {
         }}
       >
         <div>
-          <h1 style={{ fontFamily: "Bebas" }}>Momen Refaat</h1>
+          <h1 style={{ fontFamily: "Bebas" }}>{t("Momen Refaat")}</h1>
         </div>
         <div
           style={{
@@ -47,14 +55,21 @@ export default function Header({ isToggled, setIsToggled }) {
               }}
             >
               <MenuItem href="#">
-                <a href="#work">Work</a>
+                <a href="#work">{t("projects")}</a>
               </MenuItem>
               <MenuItem href="#">
-                <a href="#about">About</a>
+                <a href="#about">{t("About")}</a>
               </MenuItem>
               <MenuItem href="#">
-                <a href="#connect">Connect</a>
+                <a href="#connect">{t("Connect us")}</a>
               </MenuItem>
+
+              <Button
+                sx={{ backgroundColor: "black", color: "white" }}
+                onClick={toggleLanguage}
+              >
+                {t("English")}
+              </Button>
             </div>
           ) : (
             ""
@@ -115,7 +130,7 @@ export default function Header({ isToggled, setIsToggled }) {
                     }
                   }}
                 >
-                  Work
+                  <a href="#work">{t("projects")}</a>
                 </MenuItem>
 
                 <MenuItem
@@ -128,7 +143,7 @@ export default function Header({ isToggled, setIsToggled }) {
                     }
                   }}
                 >
-                  About
+                  <a href="#about">{t("About")}</a>
                 </MenuItem>
 
                 <MenuItem
@@ -141,8 +156,14 @@ export default function Header({ isToggled, setIsToggled }) {
                     }
                   }}
                 >
-                  Connect
+                  <a href="#connect">{t("Connect us")}</a>
                 </MenuItem>
+                <Button
+                  onClick={toggleLanguage}
+                  sx={{ backgroundColor: "black", color: "white", padding: "6px 16px"  }}
+                >
+                  {t("English")}
+                </Button>
               </Menu>
             </div>
           )}

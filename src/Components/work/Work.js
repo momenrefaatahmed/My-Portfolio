@@ -1,9 +1,11 @@
+import { useAppTranslation } from "../../Context/lang";
 /* Material Ui */
 import Grid from "@mui/material/GridLegacy";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Work() {
+  const { t, language, toggleLanguage } = useAppTranslation();
   return (
     <div id="work" style={{ color: "white", marginTop: "100px" }}>
       <div style={{ marginBottom: "20px" }}>
@@ -14,7 +16,7 @@ export default function Work() {
             margin: "auto",
           }}
         >
-          Featured Projects
+          {t("Featured Projects")}
         </h1>
         <p
           style={{
@@ -23,8 +25,9 @@ export default function Work() {
             opacity: "0.7",
           }}
         >
-          Here are some of the selected projects that showcase my passion for
-          front-end development.
+          {t(
+            "Here are some of the selected projects that showcase my passion for front-end development."
+          )}
         </p>
       </div>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
@@ -60,11 +63,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("Bootstrap Practice Project")}
               </h2>
               <p
                 style={{
@@ -73,11 +77,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This website was developed as a practice project to enhance my front-end skills after learning Bootstrap. I focused on implementing Bootstrap’s grid system, responsive design techniques, and UI components to create a user-friendly and modern layout."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -87,7 +89,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -99,8 +101,8 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
-                <span style={{ opacity: "0.7" }}>2024</span>
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
               </div>
               <div
                 style={{
@@ -112,20 +114,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://heroic-nougat-fdaf18.netlify.app/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Bootstrap">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -166,11 +170,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("Currency Converter – Real-Time Exchange Rates")}
               </h2>
               <p
                 style={{
@@ -179,11 +184,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This Currency Converter web app is designed to make currency conversion simple and fast. Users can select from a wide range of global currencies, such as USD, EUR, GBP, EGP, and more, and instantly see the conversion result. The project demonstrates my skills in JavaScript for dynamic calculations and creating user-friendly, responsive web interfaces."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -193,7 +196,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -205,7 +208,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
+                <span>{t("Year")}</span>
                 <span style={{ opacity: "0.7" }}>2024</span>
               </div>
               <div
@@ -218,20 +221,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://momenrefaatahmed.github.io/Currency-Converter/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Currency-Converter">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -272,11 +277,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("Photo Sharing & Social Interaction Platform")}
               </h2>
               <p
                 style={{
@@ -285,11 +291,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This project is a photo-sharing platform where users can create accounts, upload photos, and engage with others by leaving comments on posts. Each user has a personal profile, with the ability to edit or delete their own posts and publish new ones. The project demonstrates core functionalities of modern social media platforms, including user authentication, content management, and interactive features."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -299,7 +303,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -311,8 +315,8 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
-                <span style={{ opacity: "0.7" }}>2024</span>
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
               </div>
               <div
                 style={{
@@ -324,20 +328,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://clever-sherbet-fd2c5c.netlify.app/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Media/tree/main">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -378,11 +384,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("SEO Landing Page – HTML & CSS Project")}
               </h2>
               <p
                 style={{
@@ -391,11 +398,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This project is a professional SEO-focused landing page developed using only HTML and CSS. It highlights key aspects of Search Engine Optimization with a clean, user-friendly layout and modern design. The page is responsive and structured to demonstrate best practices in web design while providing an engaging presentation of SEO services."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -405,7 +410,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -417,7 +422,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
+                <span>{t("Year")}</span>
                 <span style={{ opacity: "0.7" }}>2024</span>
               </div>
               <div
@@ -430,20 +435,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://momenrefaatahmed.github.io/momenrefaatahmed-momenrefaatahmed-HTML-And-CSS-Template-4/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/momenrefaatahmed-momenrefaatahmed-HTML-And-CSS-Template-4?tab=readme-ov-file#httpsmomenrefaatahmedgithubiomomenrefaatahmed-momenrefaatahmed-html-and-css-template-4">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -484,11 +491,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("React To-Do List App – Task Manager")}
               </h2>
               <p
                 style={{
@@ -497,11 +505,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This project is a To-Do List application developed using React.js, focusing on efficient task management. The app allows users to add new tasks, edit them, mark tasks as completed or incomplete, and remove tasks as needed. It demonstrates React’s powerful state management and component-based architecture, with a user-friendly and responsive design."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -511,7 +517,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -523,8 +529,8 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
-                <span style={{ opacity: "0.7" }}>2024</span>
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
               </div>
               <div
                 style={{
@@ -536,20 +542,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://chimerical-zabaione-36cbd2.netlify.app/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Todo-List">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -590,11 +598,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("Cairo Weather App – Dynamic API & Multi-Language Support")}
               </h2>
               <p
                 style={{
@@ -603,11 +612,10 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                "This weather application provides real-time temperature data
+                for Cairo using a weather API. It features a dynamic interface
+                with the ability to switch between languages, offering a smooth
+                and user-friendly experience."
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -617,7 +625,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -629,8 +637,8 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
-                <span style={{ opacity: "0.7" }}>2024</span>
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
               </div>
               <div
                 style={{
@@ -642,20 +650,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://legendary-sunflower-c61ba0.netlify.app/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Weather">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>
@@ -696,11 +706,12 @@ export default function Work() {
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
+          dir= {language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
               <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-                Promotional landing page for our favorite show
+                {t("Prayer Times App – Dynamic API for Egyptian Cities")}
               </h2>
               <p
                 style={{
@@ -709,11 +720,9 @@ export default function Work() {
                   opacity: "0.7",
                 }}
               >
-                Teamed up with a designer to breathe life into a promotional
-                webpage for our beloved show, Adventure Time. Delivered a fully
-                responsive design with dynamic content capabilities, seamlessly
-                integrating a newsletter feature to keep fans updated with the
-                latest adventures.
+                {t(
+                  "This project is a web application that displays prayer times for various governorates in Egypt. It dynamically fetches accurate timings using an API, providing users with up-to-date and reliable prayer schedules."
+                )}
               </p>
             </div>
             <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
@@ -723,7 +732,7 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                Project Info
+                {t("Project Info")}
               </h3>
               <div
                 style={{
@@ -735,8 +744,8 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Year</span>
-                <span style={{ opacity: "0.7" }}>2024</span>
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
               </div>
               <div
                 style={{
@@ -748,20 +757,22 @@ export default function Work() {
                   paddingBottom: "10px",
                 }}
               >
-                <span>Role</span>
-                <span style={{ opacity: "0.7" }}>Front-end Developer</span>
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
               </div>
             </div>
             <div style={{ display: "flex" }}>
               <div className="hoverBox">
                 <a href="https://illustrious-unicorn-7fbc85.netlify.app/">
-                  LIVE DEMO
+                  {t("LIVE DEMO")}
                 </a>
                 <ArrowOutwardIcon />
               </div>
               <div className="hoverBox">
                 <a href="https://github.com/momenrefaatahmed/Prayer-times">
-                  See on Github
+                  {t("See on Github")}
                 </a>
                 <GitHubIcon />
               </div>

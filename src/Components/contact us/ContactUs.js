@@ -1,3 +1,4 @@
+import { useAppTranslation } from "../../Context/lang";
 /* Material Ui */
 import Grid from "@mui/material/GridLegacy";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -7,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactUs() {
+  const { t, language, toggleLanguage } = useAppTranslation();
   const [state, handleSubmit] = useForm("xeozqgrl");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
@@ -25,10 +27,10 @@ export default function ContactUs() {
               margin: "auto",
             }}
           >
-            Let’s connect
+            {t("Let’s connect")}
           </h1>
           <p>
-            Say Hello At{" "}
+            {t("Say Hello At")}{" "}
             <span style={{ textDecoration: "underline" }}>
               momenrefaat64@gmail.com
             </span>
@@ -72,8 +74,9 @@ export default function ContactUs() {
             <label
               htmlFor="email"
               style={{ color: "#D3E97A", fontWeight: "bold" }}
+              dir= {language === "ar" ? "rtl" : "ltr"}
             >
-              Email Address
+              {t("Email Address")}
             </label>
             <input
               id="email"
@@ -97,8 +100,9 @@ export default function ContactUs() {
             <label
               htmlFor="message"
               style={{ color: "#D3E97A", fontWeight: "bold" }}
+              dir= {language === "ar" ? "rtl" : "ltr"}
             >
-              Message
+              {t("Message")}
             </label>
             <textarea
               id="message"

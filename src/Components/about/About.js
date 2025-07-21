@@ -1,9 +1,11 @@
+import { useAppTranslation } from "../../Context/lang";
 /* Material Ui */
 import Grid from "@mui/material/GridLegacy";
 
 export default function About() {
+  const { t, language, toggleLanguage } = useAppTranslation();
   return (
-    <div id="about" style={{ marginTop: "100px", color: "white", }}>
+    <div id="about" style={{ marginTop: "100px", color: "white" }}>
       <h1
         style={{
           fontFamily: "Bebas",
@@ -13,7 +15,7 @@ export default function About() {
           marginBottom: "25px",
         }}
       >
-        About Me
+        {t("About Me")}
       </h1>
 
       <Grid container spacing={2}>
@@ -42,22 +44,18 @@ export default function About() {
           </div>
           {/* <h1 style={{ fontFamily: "Bebas", fontSize: "80px" }}>About Me</h1> */}
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} dir={language === "ar" ? "rtl" : "ltr"}>
           <h1 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
-            "I’m a passionate front-end developer based in Badr City, I
-            continuously strive to improve my skills in web development and
-            create engaging user experiences."
+            {t(
+              "I’m a passionate front-end developer based in Badr City, I continuously strive to improve my skills in web development and create engaging user experiences."
+            )}
           </h1>
           <p
             style={{ fontFamily: "Manrope", fontWeight: "400", opacity: "0.7" }}
           >
-            Web Developer, Front End, Motivated junior front-end developer based
-            in Egypt, with a solid understanding of HTML, CSS, and JavaScript.
-            Recently started working with frameworks like React.js and focused
-            on building clean, responsive, and user-friendly interfaces.
-            Passionate about learning new web technologies and improving my
-            skills continuously. Eager to contribute to creative teams and help
-            build high-quality digital products with great user experience.
+            {t(
+              "Web Developer, Front End, Motivated junior front-end developer based in Egypt, with a solid understanding of HTML, CSS, and JavaScript. Recently started working with frameworks like React.js and focused on building clean, responsive, and user-friendly interfaces. Passionate about learning new web technologies and improving my skills continuously. Eager to contribute to creative teams and help build high-quality digital products with great user experience."
+            )}
           </p>
           <div>
             <h1
@@ -66,7 +64,7 @@ export default function About() {
                 paddingBottom: "10px",
               }}
             >
-              Skils
+              {t("Skils")}
             </h1>
             <div
               style={{
@@ -84,7 +82,11 @@ export default function About() {
               <div style={{ display: "flex", alignItems: "center" }}>
                 <img src="image/icons8-react-js-100.png" alt="About" />
                 <img src="image/icons8-api-96.png" alt="About" />
-                <img style={{margin: "0 5px"}} src="image/icons8-redux-48.png" alt="About" />
+                <img
+                  style={{ margin: "0 5px" }}
+                  src="image/icons8-redux-48.png"
+                  alt="About"
+                />
                 <img src="image/icons8-postman-inc-48.png" alt="About" />
               </div>
             </div>

@@ -1,4 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { useAppTranslation } from "../../Context/lang";
+
 /* Material Ui */
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -13,10 +17,11 @@ export default function Home({ marginTop }) {
   const { isSmallScreen, isLargeScreen } = useContext(MediaQuery);
   const [hoveredInstagram, setHoveredInstagram] = React.useState(false);
   const [hoveredGitHub, setHoveredGitHub] = React.useState(false);
+  const { t } = useAppTranslation();
 
   return (
     <div
-    id="home"
+      id="home"
       style={{
         minHeight: "calc(100vh - 131px )",
         color: "white",
@@ -60,8 +65,8 @@ export default function Home({ marginTop }) {
                 letterSpacing: "2px",
               }}
             >
-              Hi, I'm Momen Refaat
-              <pre /> Front-End Developer
+              {t("Hi, I'm Momen Refaat")}
+              <pre /> {t("Front-End Developer")}
             </h1>
             <p
               style={{
@@ -70,13 +75,15 @@ export default function Home({ marginTop }) {
                 opacity: "0.7",
               }}
             >
-              A cairo based front-end developer passionate about building
-              accessible and user friendly websites.
+              {t(
+                "A cairo based front-end developer passionate about building accessible and user friendly websites."
+              )}
             </p>
             <div style={{ margin: "24px 0 22px" }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div>
-                  <a href="#connect"
+                  <a
+                    href="#connect"
                     style={{
                       backgroundColor: "#D3E97A",
                       color: "black",
@@ -90,7 +97,9 @@ export default function Home({ marginTop }) {
                       alignItems: "center",
                     }}
                   >
-                    <span style={{ marginRight: "10px" }}>CONTACT ME</span>
+                    <span style={{ marginRight: "10px" }}>
+                      {t("CONTACT ME")}
+                    </span>
                     <span
                       style={{
                         width: "10px",
