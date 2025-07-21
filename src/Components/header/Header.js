@@ -68,7 +68,7 @@ export default function Header({ isToggled, setIsToggled }) {
                 sx={{ backgroundColor: "black", color: "white" }}
                 onClick={toggleLanguage}
               >
-                {t("English")}
+                {(t("Arabic"))}
               </Button>
             </div>
           ) : (
@@ -162,7 +162,7 @@ export default function Header({ isToggled, setIsToggled }) {
                   onClick={toggleLanguage}
                   sx={{ backgroundColor: "black", color: "white", padding: "6px 16px"  }}
                 >
-                  {t("English")}
+                  {(t("Arabic"))}
                 </Button>
               </Menu>
             </div>
