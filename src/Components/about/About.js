@@ -35,7 +35,7 @@ export default function About() {
             }}
           >
             <img
-              src="image/about.png"
+              src="image/about.webp"
               alt="About"
               style={{
                 width: "100%",
@@ -87,20 +87,20 @@ export default function About() {
               }}
             >
               <div style={{ display: "flex", alignItems: "center" }}>
-                <img src="image/icons8-html-96.png" alt="About" />
-                <img src="image/icons8-css-96.png" alt="About" />
-                <img src="image/icons8-bootstrap-96.png" alt="About" />
+                <img src="image/icons8-html-96.webp" alt="About" />
+                <img src="image/icons8-css-96.webp" alt="About" />
+                <img src="image/icons8-bootstrap-96.webp" alt="About" />
                 <img src="image/icons8-js.gif" alt="About" />
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <img src="image/icons8-react-js-100.png" alt="About" />
-                <img src="image/icons8-api-96.png" alt="About" />
+                <img src="image/icons8-react-js-100.webp" alt="About" />
+                <img src="image/icons8-api-96.webp" alt="About" />
                 <img
                   style={{ margin: "0 5px" }}
-                  src="image/icons8-redux-48.png"
+                  src="image/icons8-redux-48.webp"
                   alt="About"
                 />
-                <img src="image/icons8-postman-inc-48.png" alt="About" />
+                <img src="image/icons8-postman-inc-48.webp" alt="About" />
               </div>
             </div>
           </div>

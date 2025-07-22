@@ -56,7 +56,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/BootsTrap.png"
+              src="/image/BootsTrap.webp"
               alt="Work"
             />
           </div>
@@ -165,7 +165,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/Currency.png"
+              src="/image/Currency.webp"
               alt="Work"
             />
           </div>
@@ -274,7 +274,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/media.png"
+              src="/image/media.webp"
               alt="Work"
             />
           </div>
@@ -383,7 +383,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/seo.png"
+              src="/image/seo.webp"
               alt="Work"
             />
           </div>
@@ -492,7 +492,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/todo.png"
+              src="/image/todo.webp"
               alt="Work"
             />
           </div>
@@ -601,7 +601,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/wather.png"
+              src="/image/wather.webp"
               alt="Work"
             />
           </div>
@@ -711,7 +711,7 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
-              src="/image/Prayer.png"
+              src="/image/Prayer.webp"
               alt="Work"
             />
           </div>

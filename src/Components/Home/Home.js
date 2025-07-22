@@ -18,8 +18,6 @@ export default function Home({ marginTop }) {
   const [hoveredGitHub, setHoveredGitHub] = React.useState(false);
   const { t } = useAppTranslation();
 
-
-
   return (
     <div
       id="home"
@@ -61,6 +59,7 @@ export default function Home({ marginTop }) {
             }}
           >
             <h1
+              className="home-title"
               style={{
                 fontFamily: "Bebas",
                 fontSize: isSmallScreen ? "60px" : "45px",
@@ -177,7 +176,7 @@ export default function Home({ marginTop }) {
           >
             <div>
               <img
-                src="/image/home-image.jpg"
+                src="/image/home-image.webp"
                 alt="Home"
                 style={{
                   width: "100%",
