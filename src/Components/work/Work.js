@@ -15,6 +15,7 @@ export default function Work() {
             fontSize: "60px",
             margin: "auto",
           }}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           {t("Featured Projects")}
         </h1>
@@ -24,6 +25,7 @@ export default function Work() {
             fontWeight: "500",
             opacity: "0.7",
           }}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           {t(
             "Here are some of the selected projects that showcase my passion for front-end development."
@@ -32,6 +34,7 @@ export default function Work() {
       </div>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -59,11 +62,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -139,6 +143,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -166,11 +171,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -246,6 +252,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -273,11 +280,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -353,6 +361,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -380,11 +389,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -460,6 +470,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -487,11 +498,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -567,6 +579,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -594,11 +607,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>
@@ -675,6 +689,7 @@ export default function Work() {
       </Grid>
       <Grid container spacing={2} sx={{ marginBottom: "30px" }}>
         <Grid
+          data-aos="fade-up"
           item
           xs={12}
           lg={6}
@@ -702,11 +717,12 @@ export default function Work() {
           </div>
         </Grid>
         <Grid
+          data-aos="fade-left"
           item
           xs={12}
           lg={6}
           sx={{ display: "flex", alignItems: "center" }}
-          dir= {language === "ar" ? "rtl" : "ltr"}
+          dir={language === "ar" ? "rtl" : "ltr"}
         >
           <div>
             <div>

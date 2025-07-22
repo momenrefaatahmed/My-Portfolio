@@ -7,6 +7,8 @@ export default function About() {
   return (
     <div id="about" style={{ marginTop: "100px", color: "white" }}>
       <h1
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
         style={{
           fontFamily: "Bebas",
           fontSize: "80px",
@@ -21,6 +23,9 @@ export default function About() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             style={{
               width: "100%",
               height: "100%",
@@ -44,7 +49,15 @@ export default function About() {
           </div>
           {/* <h1 style={{ fontFamily: "Bebas", fontSize: "80px" }}>About Me</h1> */}
         </Grid>
-        <Grid item xs={12} md={6} dir={language === "ar" ? "rtl" : "ltr"}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          dir={language === "ar" ? "rtl" : "ltr"}
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h1 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
             {t(
               "I’m a passionate front-end developer based in Badr City, I continuously strive to improve my skills in web development and create engaging user experiences."

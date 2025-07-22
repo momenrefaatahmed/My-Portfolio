@@ -1,7 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
 import { useAppTranslation } from "../../Context/lang";
+import "aos/dist/aos.css";
 
 /* Material Ui */
 import Grid from "@mui/material/Grid";
@@ -18,6 +17,8 @@ export default function Home({ marginTop }) {
   const [hoveredInstagram, setHoveredInstagram] = React.useState(false);
   const [hoveredGitHub, setHoveredGitHub] = React.useState(false);
   const { t } = useAppTranslation();
+
+
 
   return (
     <div
@@ -45,7 +46,9 @@ export default function Home({ marginTop }) {
           sx={{ justifyContent: isLargeScreen ? "space-between" : "center" }}
           alignItems="center"
         >
+          {/* المحتوى هنا */}
           <Grid
+            data-aos="fade-right"
             item
             xs={12}
             md={5}
@@ -162,6 +165,7 @@ export default function Home({ marginTop }) {
             </div>
           </Grid>
           <Grid
+            data-aos="fade-left"
             item
             xs={12}
             md={8}

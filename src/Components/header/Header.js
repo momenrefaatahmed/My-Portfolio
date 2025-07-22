@@ -34,7 +34,7 @@ export default function Header({ isToggled, setIsToggled }) {
           alignItems: "center",
         }}
       >
-        <div>
+        <div data-aos="fade-right">
           <h1 style={{ fontFamily: "Bebas" }}>{t("Momen Refaat")}</h1>
         </div>
         <div
@@ -47,6 +47,7 @@ export default function Header({ isToggled, setIsToggled }) {
         >
           {isSmallScreen ? (
             <div
+              data-aos="fade-left"
               style={{
                 fontFamily: "Inter",
                 display: "flex",
@@ -68,7 +69,7 @@ export default function Header({ isToggled, setIsToggled }) {
                 sx={{ backgroundColor: "black", color: "white" }}
                 onClick={toggleLanguage}
               >
-                {(t("Arabic"))}
+                {t("Arabic")}
               </Button>
             </div>
           ) : (
@@ -78,7 +79,7 @@ export default function Header({ isToggled, setIsToggled }) {
           {isSmallScreen ? (
             ""
           ) : (
-            <div>
+            <div data-aos="fade-left">
               <input
                 id="checkbox"
                 type="checkbox"
@@ -159,10 +160,17 @@ export default function Header({ isToggled, setIsToggled }) {
                   <a href="#connect">{t("Connect us")}</a>
                 </MenuItem>
                 <Button
-                  onClick={toggleLanguage}
-                  sx={{ backgroundColor: "black", color: "white", padding: "6px 16px"  }}
+                  onClick={() => {
+                    toggleLanguage();
+                    handleClose();
+                  }}
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    padding: "6px 16px",
+                  }}
                 >
-                  {(t("Arabic"))}
+                  {t("Arabic")}
                 </Button>
               </Menu>
             </div>

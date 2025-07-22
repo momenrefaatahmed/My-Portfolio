@@ -19,7 +19,14 @@ export default function ContactUs() {
       style={{ marginTop: "100px", color: "white", paddingBottom: "100px" }}
     >
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h1
             style={{
               fontFamily: "Bebas",
@@ -58,7 +65,14 @@ export default function ContactUs() {
           </div>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <form
             onSubmit={handleSubmit}
             style={{
@@ -74,7 +88,7 @@ export default function ContactUs() {
             <label
               htmlFor="email"
               style={{ color: "#D3E97A", fontWeight: "bold" }}
-              dir= {language === "ar" ? "rtl" : "ltr"}
+              dir={language === "ar" ? "rtl" : "ltr"}
             >
               {t("Email Address")}
             </label>
@@ -100,7 +114,7 @@ export default function ContactUs() {
             <label
               htmlFor="message"
               style={{ color: "#D3E97A", fontWeight: "bold" }}
-              dir= {language === "ar" ? "rtl" : "ltr"}
+              dir={language === "ar" ? "rtl" : "ltr"}
             >
               {t("Message")}
             </label>
