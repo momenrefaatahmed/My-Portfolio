@@ -35,34 +35,31 @@ function App() {
               <Home marginTop={isToggled ? "200px" : "0px"} />
               <hr
                 style={{
-                  position: "absolute",
-                  left: "0",
-                  width: "calc(100% - 2px)",
+                  width: "100%",
                   border: "1px solid #484848",
+                  margin: "40px 0",
                 }}
               />
               <Work />
               <hr
                 style={{
-                  position: "absolute",
-                  left: "0",
-                  width: "calc(100% - 2px)",
+                  width: "100%",
                   border: "1px solid #484848",
+                  margin: "40px 0",
                 }}
               />
               <About />
               <hr
                 style={{
-                  position: "absolute",
-                  left: "0",
-                  width: "calc(100% - 2px)",
+                  width: "100%",
                   border: "1px solid #484848",
+                  margin: "40px 0",
                 }}
               />
               <ContactUs />
             </div>
+            <ScrollToTopButton />
           </AosProvider>
-          <ScrollToTopButton />
         </MediaQuery.Provider>
       </TranslationProvider>
     </div>
