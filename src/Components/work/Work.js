@@ -56,6 +56,113 @@ export default function Work() {
                 maxHeight: "90%",
                 borderRadius: "10px",
               }}
+              src="/image/Flatlogic.webp"
+              alt="Work"
+            />
+          </div>
+        </Grid>
+        <Grid
+          data-aos="fade-left"
+          item
+          xs={12}
+          lg={6}
+          sx={{ display: "flex", alignItems: "center" }}
+          dir={language === "ar" ? "rtl" : "ltr"}
+        >
+          <div>
+            <div>
+              <h2 style={{ fontFamily: "Manrope", fontWeight: "500" }}>
+                {t("Flatlogic – E-commerce Web App")}
+              </h2>
+              <p
+                style={{
+                  fontFamily: "Manrope",
+                  fontWeight: "500",
+                  opacity: "0.7",
+                }}
+              >
+                {t(
+                  "Flatlogic is a responsive e-commerce web application for home decor products like lamps, cushions, and decorative items.It features user feedback system, admin dashboard with product management including add, edit, and delete products, and interactive charts.Built with React.js (Vite), Firebase, Bootstrap, Material UI, and Axios for a modern and user-friendly experience"
+                )}
+              </p>
+            </div>
+            <div style={{ fontFamily: "Manrope", fontWeight: "500" }}>
+              <h3
+                style={{
+                  borderBottom: "1px solid #484848",
+                  paddingBottom: "10px",
+                }}
+              >
+                {t("Project Info")}
+              </h3>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  margin: "19px 0",
+                  borderBottom: "1px solid #484848",
+                  paddingBottom: "10px",
+                }}
+              >
+                <span>{t("Year")}</span>
+                <span style={{ opacity: "0.7" }}>2025</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  margin: "19px 0",
+                  borderBottom: "1px solid #484848",
+                  paddingBottom: "10px",
+                }}
+              >
+                <span>{t("Role")}</span>
+                <span style={{ opacity: "0.7" }}>
+                  {t("Front-end Developer")}
+                </span>
+              </div>
+            </div>
+            <div style={{ display: "flex" }}>
+              <div className="hoverBox">
+                <a href="https://coruscating-llama-31cb88.netlify.app/">
+                  {t("LIVE DEMO")}
+                </a>
+                <ArrowOutwardIcon />
+              </div>
+              <div className="hoverBox">
+                <a href="https://github.com/momenrefaatahmed/Flatlogic">
+                  {t("See on Github")}
+                </a>
+                <GitHubIcon />
+              </div>
+            </div>
+          </div>
+        </Grid>
+        <Grid
+          data-aos="fade-up"
+          item
+          xs={12}
+          lg={6}
+          sx={{ display: "flex", alignItems: "center" }}
+        >
+          <div
+            style={{
+              padding: "50px 50px",
+              backgroundColor: "#1A1A1A",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "10px",
+            }}
+          >
+            <img
+              style={{
+                maxWidth: "90%",
+                maxHeight: "90%",
+                borderRadius: "10px",
+              }}
               src="/image/BootsTrap.webp"
               alt="Work"
             />

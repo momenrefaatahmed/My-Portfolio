@@ -37,7 +37,9 @@
   "Say Hello At": "قل مرحباً ل",
   "Email Address": "عنوان البريد الإلكتروني",
   "Message": "رسالة",
-  "Arabic": "الإنجليزية"
+  "Arabic": "الإنجليزية",
+  "Flatlogic – E-commerce Web App": " متجر Flatlogic",
+  "Flatlogic is a responsive e-commerce web application for home decor products like lamps, cushions, and decorative items.It features user feedback system, admin dashboard with product management including add, edit, and delete products, and interactive charts.Built with React.js (Vite), Firebase, Bootstrap, Material UI, and Axios for a modern and user-friendly experience": "Flatlogic هو تطبيق متجاوب لمتجر إلكتروني للديكور المنزلي مثل الأباجورات، الوسائد، والقطع الزخرفية.يتميز بـ نظام تقييم وتعليقات المستخدمين، لوحة تحكم للإدمن لإدارة المنتجات تشمل إضافة، تعديل، وحذف المنتجات، بالإضافة إلى رسوم بيانية تفاعلية.تم تطويره باستخدام React.js (Vite)، Firebase، Bootstrap، Material UI، و Axios لتقديم تجربة حديثة وسهلة الاستخدام."
   
 
   
